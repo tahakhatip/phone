@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> ALKHATIB IFON</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">المنتجات</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="text">
+            <h2>IFON 13 PRO MAX </h2>
+            <P>L optio mi amet, doloremque conseqanimi
+                  eaque consectetur.
+            </P>
+            <a href="#">all product</a>
+        </div>
+        <div class="image">
+            <img class="img" src="0.png">
+        </div>
+      </div>
+      <div class="img">
+        <img id="imgPreview" src="" alt="">
+      </div>
+      <div class="icons">
+        <img onclick="fones('0.png'); colors('#000')" src="0.png" alt="">
+        <img onclick="fones('1.png'); colors('#247es8')" src="1.png" alt="">
+        <img onclick="fones('2.png'); colors('#1e1e1e')" src="2.png" alt="">
+        <img onclick="fones('3.png'); colors('#c79b53')" src="3.png" alt="">
+        <img onclick="fones('4.png'); colors('red')" src="4.png" alt="">
+      </div>
+      
+      <script>
+        function colors(color) {
+          let container = document.querySelector('.container');
+          container.style.background = color;
+        }
+      
+        function fones(fone) {
+          var imgPreview = document.getElementById('imgPreview');
+          imgPreview.src = fone;
+        }
+      </script>
+      
+      <script>
+        function fones(fone) {
+            let img = document.querySelector('.img');
+          img.src = fone;
+        }
+        function colors(color) {
+  let container = document.querySelector('.container');
+  container.style.background = color;
+}
+      </script>
+     
+    </div>
+    <script src="mien.js"></script>
+    
+</body>
+</html>
+
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+
+
+
